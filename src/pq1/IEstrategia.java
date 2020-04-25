@@ -1,5 +1,7 @@
 package pq1;
 
-public interface IMultiplicacion {
+public interface IEstrategia {
+	
 	float resultado(int numIni, int numFin);
+	
 }
