@@ -4,8 +4,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		IEstrategia multiplicacion = new MultiplicacionRusa();
-		System.out.println(multiplicacion.resultado(37, 12));
+		Ejercicio ejercio = new Ejercicio( new MultiplicacionRusa() );
+		
+		System.out.println(ejercio.resolverMultiplicacion(37, 6));
 	}
 
 }

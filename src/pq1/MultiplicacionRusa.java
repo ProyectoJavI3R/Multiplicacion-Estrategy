@@ -1,22 +1,24 @@
 package pq1;
 
-public class MultiplicacionRusa implements IMultiplicacion{
+/*
+ * Algoritmo encapsulado en la clase
+ */
+
+public class MultiplicacionRusa implements IEstrategia{
 	
-	public float resultado(int multiplicador, int multiplicando) {
+	public float resolverProblema(int multiplicador, int multiplicando) {
 		
 		float resultado = 0f;
 		
-		do{
+		while((multiplicador != 0)) {
 			
-			if(multiplicador % 2 != 0) {
-//				System.out.println(multiplicando);
+			if(multiplicador % 2 != 0) 
 				resultado += multiplicando;
-			}
-			System.out.println("M: " + multiplicador);
+			
 			multiplicador /= 2;
 			multiplicando *= 2;
 			
-		} while((multiplicador != 1));
+		}
 		
 		return resultado;
 		
